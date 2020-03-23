@@ -8,6 +8,43 @@
     
 </head>
 <body>
+    <div class="popup" id="js-popup">
+
+        <div class="askwho">
+            <div class="order">
+                디미고 구글계정이 몇번째로 되어있나요?
+                <div class="border">
+                    <select name="order" id="whatorder">
+                        <option value="0">1번째</option>
+                        <option value="1">2번째</option>
+                        <option value="2">3번째</option>
+                        <option value="3">4번째</option>
+                        <option value="4">5번째</option>
+                        <option value="5">6번째</option>
+                        <option value="6">7번째</option>
+                        <option value="7">8번째</option>
+                        <option value="8">9번째</option>
+                        <option value="9">10번째</option>
+                    </select>
+                    
+                </div>
+            </div>
+            <div class="class">
+                당신의 반은?
+                <div class="border">
+                    <select name="class" id="whatclass">
+                        <option value="1">1반</option>
+                        <option value="2">2반</option>
+                        <option value="3">3반</option>
+                        <option value="4">4반</option>
+                        <option value="5">5반</option>
+                        <option value="6">6반</option>
+                    </select>
+                </div>
+            </div> <br>
+            <button onclick="popup()">확인</button>
+        </div>
+    </div>
     <br>
     <div class="js-header">
         <div id="dday">개학까지 D-00</div>
@@ -18,22 +55,22 @@
         <table>
                     <th></th>                               <th>월</th>                                                                 <th>화</th>                                                                     <th>수</th>                                                                         <th>목</th>                                                                         <th>금</th>
             <tr>
-                <td>1교시</td>          <td><a href="http://bitly.kr/LT9zA29M" target="blank_">문학</a></td>          <td><a href="http://bitly.kr/lyMetkIJ" target="blank_">수학1</a></td>        <td><a href="http://bitly.kr/LT9zA29M" target="blank_">문학</a></td>         <td><a href="http://bitly.kr/JJsnurUe" target="blank_">영어1</a></td>            <td><a href="http://bitly.kr/LT9zA29M" target="blank_">문학</a></td>
+                <td>1교시</td>          <td><a href="http://bitly.kr/LT9zA29M" target="blank_" id="ko">문학</a></td>          <td><a href="http://bitly.kr/lyMetkIJ" target="blank_" id="mt">수학1</a></td>        <td><a href="http://bitly.kr/LT9zA29M" target="blank_" id="ko">문학</a></td>         <td><a href="http://bitly.kr/JJsnurUe" target="blank_" id="en">영어1</a></td>            <td><a href="http://bitly.kr/LT9zA29M" target="blank_" id="ko">문학</a></td>
             </tr>
             <tr>
-                <td>2교시</td>          <td><a href="http://bitly.kr/lyMetkIJ" target="blank_">수학1</a></td>         <td><a href="http://bitly.kr/JJsnurUe" target="blank_">영어1</a></td>       <td><a href="http://bitly.kr/eC1vBc5u" target="blank_">물리학1</a></td>       <td><a href="http://bitly.kr/BLZ13Iwo" target="blank_">중국어1</a></td>          <td><a href="http://bitly.kr/tuptPXR3" target="blank_">자료구조</a></td>
+                <td>2교시</td>          <td><a href="http://bitly.kr/lyMetkIJ" target="blank_" id="mt">수학1</a></td>         <td><a href="http://bitly.kr/JJsnurUe" target="blank_" id="en">영어1</a></td>       <td><a href="http://bitly.kr/eC1vBc5u" target="blank_" id="sc">물리학1</a></td>       <td><a href="http://bitly.kr/BLZ13Iwo" target="blank_" id="ch">중국어1</a></td>          <td><a href="http://bitly.kr/tuptPXR3" target="blank_" id="jg">자료구조</a></td>
             </tr>
             <tr>
-                <td>3교시</td>         <td><a href="http://bitly.kr/eC1vBc5u" target="blank_">물리학1</a></td>        <td><a href="http://bitly.kr/BLZ13Iwo" target="blank_">중국어1</a></td>     <td><a href="http://bitly.kr/tuptPXR3" target="blank_">자료구조</a></td>  <td><a href="http://bitly.kr/ekmyMaed" target="blank_">정보보호관리</a></td>  <td><a href="http://bitly.kr/JdtX9d9h" target="blank_">응용프로그래밍 화면구현</a></td>
+                <td>3교시</td>         <td><a href="http://bitly.kr/eC1vBc5u" target="blank_" id="sc">물리학1</a></td>        <td><a href="http://bitly.kr/BLZ13Iwo" target="blank_" id="ch">중국어1</a></td>     <td><a href="http://bitly.kr/tuptPXR3" target="blank_" id="jg">자료구조</a></td>  <td><a href="http://bitly.kr/ekmyMaed" target="blank_" id="jb">정보보호관리</a></td>  <td><a href="http://bitly.kr/JdtX9d9h" target="blank_" id="fn">응용프로그래밍 화면구현</a></td>
             </tr>
             <tr>
-                <td>4교시</td>   <td><a href="http://bitly.kr/ekmyMaed" target="blank_">정보보호관리</a></td>  <td><a href="http://bitly.kr/zNplVjHL" target="blank_">정보통신</a></td> <td><a href="http://bitly.kr/JdtX9d9h" target="blank_">응용프로그래밍 화면구현</a></td><td><a href="http://bitly.kr/9HL81lh2" target="blank_">운동과 건강</a></td>    <td><a href="http://bitly.kr/u6ABrV6x" target="blank_">공업수학</a></td>
+                <td>4교시</td>   <td><a href="http://bitly.kr/ekmyMaed" target="blank_" id="jb">정보보호관리</a></td>  <td><a href="http://bitly.kr/zNplVjHL" target="blank_" id="jt">정보통신</a></td> <td><a href="http://bitly.kr/JdtX9d9h" target="blank_" id="fn">응용프로그래밍 화면구현</a></td><td><a href="http://bitly.kr/9HL81lh2" target="blank_" id="pe">운동과 건강</a></td>    <td><a href="http://bitly.kr/u6ABrV6x" target="blank_" id="gs">공업수학</a></td>
             </tr>
             <tr>
-                <td>5교시</td>          <td><a href="http://bitly.kr/u6ABrV6x" target="blank_">공업수학</a></td>                 <td></td>                <td><a href="http://bitly.kr/u6ABrV6x" target="blank_">공업수학</a></td><td><td></td>
+                <td>5교시</td>          <td><a href="http://bitly.kr/u6ABrV6x" target="blank_" id="gs">공업수학</a></td>                 <td></td>                <td><a href="http://bitly.kr/u6ABrV6x" target="blank_" id="gs">공업수학</a></td><td><td></td>
             </tr>
             <tr id="lastTr">
-                <td>실시간수업<br>(3시)</td>          <td></td>       <td><a href="http://bitly.kr/zIX3RoYt" target="blank_">성공적인 직업생활</a></td><td></td><td></td><td></td>
+                <td>실시간수업<br>(오후 3시)</td>          <td></td>       <td><a href="http://bitly.kr/zIX3RoYt" target="blank_" id="sj">성공적인 직업생활</a></td><td></td><td></td><td></td>
             </tr>
 
         </table>
@@ -47,5 +84,6 @@
 
     <script src="date.js"></script>
     <script src="d-day.js"></script>
+    <script src="subject-link.js"></script>
 </body>
 </html>
