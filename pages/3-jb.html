@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹프로그래밍과 4반 시간표</title>
+    <link rel="stylesheet" href="../css/timetable.css">
+
+</head>
+
+<body>
+    <a id="changeElectiveSubject" href="3.html">선택과목<br>바꾸기</a>
+    <div class="js-header">
+        <div id="dday">개학까지 D-00</div>
+        <div id="date"></div>
+        <a href="https://band.us/band/74038053" target="blank_" class="band">디미고 밴드 방문하기 ></a>
+    </div> <br>
+    <div id="table">
+        <table>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <tr>
+                <td>1교시</td>
+                <td><button onclick="goToLink(mt3)">수학1</button></td>
+                <td><button onclick="goToLink(ko)">문학</button></td>
+                <td><button onclick="goToLink(mt3)">수학1</button></td>
+                <td><button onclick="goToLink(ko)">문학</button></td>
+                <td><button onclick="goToLink(en)">영어1</button></td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td><button onclick="goToLink(ko)">문학</button></td>
+                <td><button onclick="goToLink(ch)">중국어1</button></td>
+                <td><button onclick="goToLink(en)">영어1</button></td>
+                <td><button onclick="goToLink(ch)">중국어1</button></td>
+                <td><button onclick="goToLink(jg)">자료구조</button></td>
+            </tr>
+            <tr>
+                <td>3교시</td>
+                <td><button onclick="goToLink(sc)">물리학1</button></td>
+                <td><button onclick="goToLink(jb)">정보보호와 관리</button></td>
+                <td><button onclick="goToLink(pe)">운동과 건강</button></td>
+                <td><button onclick="goToLink(uh)">응용프로그래밍 화면구현</button></td>
+                <td><button onclick="goToLink(gs3)">공업수학</button></td>
+            </tr>
+            <tr>
+                <td>4교시</td>
+                <td><button onclick="goToLink(gs3)">공업수학</button></td>
+                <td></td>
+                <td><button onclick="goToLink(jg)">자료구조</button></td>
+                <td><button onclick="goToLink(sc)">물리학1</button></td>
+                <td><button onclick="goToLink(uh)">응용프로그래밍 화면구현</button></td>
+            </tr>
+            <tr>
+                <td>5교시</td>
+                <td></td>
+                <td></td>
+                <td><button onclick="goToLink(gs3)" class="gs">공업수학</button></td>
+                <td><button onclick="goToLink(jb5)">정보보호와 관리</button></td>
+                <td></td>
+            </tr>
+            <tr id="lastTr">
+                <td>실시간수업<br>(오후 3시)</td>
+                <td></td>
+                <td><button onclick="goToLink(sj)" class="sj">성공적인 직업생활</button> </td>
+                <td><button onclick="goToLink(jt3)" class="jt">정보통신</button></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+    <br><br>
+    <footer>
+        <div id="footer">
+            <a href="https://github.com/gpdnjs110415/hwTimetable" id="me">@18WP이혜원</a>
+        </div>
+    </footer>
+
+    <script src="../js/date.js"></script>
+    <script src="../js/d-day.js"></script>
+    <script src="../js/loadLink.js"></script>
+</body>
+
+</html>

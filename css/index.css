@@ -28,16 +28,8 @@ html{
     flex-direction: column;
 }
 
-button{
-    font-size: 1rem;
-    padding: 10px 50px;
-    border: 0.5px solid #ec008c;
-    font-family: inherit;
-    color: #ec008c;
-    background-color: white;
-    box-shadow: none;
-    width: fit-content;
-}
+
+
 
 button:hover{
     color: white;
@@ -76,13 +68,16 @@ select::-ms-expand {
 
 button{
     margin: 10px;
-    padding: 5px;
-    height: 80px;
-    width: 80px;
+    padding: 18px 15px;
     border: 0.5px solid #ec008c;
     border-radius: 40px;
     color: #ec008c;
     text-decoration: none;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: white;
+    box-shadow: none;
+    width: fit-content;
 }
 
 a:hover{

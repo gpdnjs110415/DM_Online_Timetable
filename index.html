@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2020 온라인 수업 계획표</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <div class="popup" id="js-popup">
 
@@ -25,25 +27,26 @@
                         <option value="8">9번째</option>
                         <option value="9">10번째</option>
                     </select>
-                    
+
                 </div>
-            </div> 
+            </div>
             <br>
             -
             <br><br>
             <div class="class">
                 ↓ 클릭해서 우리반 시간표보기 ↓<br>
                 <div class="border">
-                    <button onclick="orderSave1()">1반</button>
-                    <button onclick="orderSave2()">2반</button>
-                    <button onclick="orderSave3()">3반</button>
-                    <button onclick="orderSave4()">4반</button>
-                    <button onclick="orderSave5()">5반</button>
-                    <button onclick="orderSave6()">6반</button>
+                    <button onclick="orderSave(1)">1반</button>
+                    <button onclick="orderSave(2)">2반</button>
+                    <button onclick="orderSave(3)">3반</button>
+                    <button onclick="orderSave(4)">4반</button>
+                    <button onclick="orderSave(5)">5반</button>
+                    <button onclick="orderSave(6)">6반</button>
                 </div>
             </div> <br>
         </div>
     </div>
-    <script src="local.js"></script>
+    <script src="js/goClassTimetable.js"></script>
 </body>
+
 </html>
