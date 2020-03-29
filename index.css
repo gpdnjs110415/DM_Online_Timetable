@@ -70,62 +70,18 @@ select::-ms-expand {
 }
 
 .border {
-    display: inline;
-}
-
-#dday, #date, .band{
-    font-size: 0.8rem;
-    display: inline;
-    text-align: center;
-
-}
-
-#date{
-    font-weight: bold;
-    margin: 0px 200px;
-    font-size: 2rem;
-}
-
-.js-header{
-    padding: 10px;
-    display: flex;
-    height: 100px;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-
-#footer, #table{
     display: flex;
     justify-content: center;
 }
 
-#me{
-    font-size: 0.7rem;
-    color: rgba(128, 128, 128, 0.452);
-}
-
-
-
-table{
-    padding: 25px;
-    text-align: center;
-    background-color:white;
-    border-collapse: collapse;
-    box-shadow: 0px 0px 10px black;
-    border: 0.5px solid gray;
-}
-
-td, th{
-    border-top: 0.5px solid gray;
-    border-bottom: 0.5px solid gray;
-    border-left: 0.5px dashed gray;
-    padding: 1rem;
-}
-
-
-a{
-    color: black;
+button{
+    margin: 10px;
+    padding: 5px;
+    height: 80px;
+    width: 80px;
+    border: 0.5px solid #ec008c;
+    border-radius: 40px;
+    color: #ec008c;
     text-decoration: none;
 }
 
@@ -134,9 +90,8 @@ a:hover{
     background-color: #ec008c;
 }
 
-#me:hover{
-    color: rgba(128, 128, 128, 0.452);
-    background-color: #ec008e00;
+.class{
+    text-align: center;
 }
 
 @font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal; }

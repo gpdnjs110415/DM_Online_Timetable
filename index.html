@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹프로그래밍과 과제 시간표</title>
+    <title>2020 온라인 수업 계획표</title>
     <link rel="stylesheet" href="index.css">
-    
 </head>
 <body>
     <div class="popup" id="js-popup">
 
         <div class="askwho">
             <div class="order">
-                디미고 구글계정이 몇번째로 되어있나요?
+                디미고 구글계정이 몇번째로 되어있나요?<br>
                 <div class="border">
                     <select name="order" id="whatorder">
                         <option value="0">1번째</option>
@@ -28,62 +27,23 @@
                     </select>
                     
                 </div>
-            </div>
+            </div> 
+            <br>
+            -
+            <br><br>
             <div class="class">
-                당신의 반은?
+                ↓ 클릭해서 우리반 시간표보기 ↓<br>
                 <div class="border">
-                    <select name="class" id="whatclass">
-                        <option value="1">1반</option>
-                        <option value="2">2반</option>
-                        <option value="3">3반</option>
-                        <option value="4">4반</option>
-                        <option value="5">5반</option>
-                        <option value="6">6반</option>
-                    </select>
+                    <button onclick="orderSave1()">1반</button>
+                    <button onclick="orderSave2()">2반</button>
+                    <button onclick="orderSave3()">3반</button>
+                    <button onclick="orderSave4()">4반</button>
+                    <button onclick="orderSave5()">5반</button>
+                    <button onclick="orderSave6()">6반</button>
                 </div>
             </div> <br>
-            <button onclick="popup()">확인</button>
         </div>
     </div>
-    <br>
-    <div class="js-header">
-        <div id="dday">개학까지 D-00</div>
-        <div id="date"></div>
-        <a href="https://band.us/band/74038053" target="blank_" class="band">디미고 밴드 방문하기 ></a>
-    </div> <br>
-    <div id="table">
-        <table>
-                    <th></th>                               <th>월</th>                                                                 <th>화</th>                                                                     <th>수</th>                                                                         <th>목</th>                                                                         <th>금</th>
-            <tr>
-                <td>1교시</td>          <td><a href="http://bitly.kr/LT9zA29M" target="blank_" id="ko">문학</a></td>          <td><a href="http://bitly.kr/lyMetkIJ" target="blank_" id="mt">수학1</a></td>        <td><a href="http://bitly.kr/LT9zA29M" target="blank_" id="ko">문학</a></td>         <td><a href="http://bitly.kr/JJsnurUe" target="blank_" id="en">영어1</a></td>            <td><a href="http://bitly.kr/LT9zA29M" target="blank_" id="ko">문학</a></td>
-            </tr>
-            <tr>
-                <td>2교시</td>          <td><a href="http://bitly.kr/lyMetkIJ" target="blank_" id="mt">수학1</a></td>         <td><a href="http://bitly.kr/JJsnurUe" target="blank_" id="en">영어1</a></td>       <td><a href="http://bitly.kr/eC1vBc5u" target="blank_" id="sc">물리학1</a></td>       <td><a href="http://bitly.kr/BLZ13Iwo" target="blank_" id="ch">중국어1</a></td>          <td><a href="http://bitly.kr/tuptPXR3" target="blank_" id="jg">자료구조</a></td>
-            </tr>
-            <tr>
-                <td>3교시</td>         <td><a href="http://bitly.kr/eC1vBc5u" target="blank_" id="sc">물리학1</a></td>        <td><a href="http://bitly.kr/BLZ13Iwo" target="blank_" id="ch">중국어1</a></td>     <td><a href="http://bitly.kr/tuptPXR3" target="blank_" id="jg">자료구조</a></td>  <td><a href="http://bitly.kr/ekmyMaed" target="blank_" id="jb">정보보호관리</a></td>  <td><a href="http://bitly.kr/JdtX9d9h" target="blank_" id="fn">응용프로그래밍 화면구현</a></td>
-            </tr>
-            <tr>
-                <td>4교시</td>   <td><a href="http://bitly.kr/ekmyMaed" target="blank_" id="jb">정보보호관리</a></td>  <td><a href="http://bitly.kr/zNplVjHL" target="blank_" id="jt">정보통신</a></td> <td><a href="http://bitly.kr/JdtX9d9h" target="blank_" id="fn">응용프로그래밍 화면구현</a></td><td><a href="http://bitly.kr/9HL81lh2" target="blank_" id="pe">운동과 건강</a></td>    <td><a href="http://bitly.kr/u6ABrV6x" target="blank_" id="gs">공업수학</a></td>
-            </tr>
-            <tr>
-                <td>5교시</td>          <td><a href="http://bitly.kr/u6ABrV6x" target="blank_" id="gs">공업수학</a></td>                 <td></td>                <td><a href="http://bitly.kr/u6ABrV6x" target="blank_" id="gs">공업수학</a></td><td><td></td>
-            </tr>
-            <tr id="lastTr">
-                <td>실시간수업<br>(오후 3시)</td>          <td></td>       <td><a href="http://bitly.kr/zIX3RoYt" target="blank_" id="sj">성공적인 직업생활</a></td><td></td><td></td><td></td>
-            </tr>
-
-        </table>
-    </div>
-    <br><br>
-    <footer>
-        <div id="footer">
-            <a href="https://github.com/gpdnjs110415/hwTimetable" id="me">@18WP이혜원</a>
-        </div>
-    </footer>
-
-    <script src="date.js"></script>
-    <script src="d-day.js"></script>
-    <script src="subject-link.js"></script>
+    <script src="local.js"></script>
 </body>
 </html>
